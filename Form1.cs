@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EjercicioCSharp_3.Ejercicios10;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,18 @@ using System.Windows.Forms;
 
 namespace EjercicioCSharp_3
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void Ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ejercicio1 ver = new Ejercicio1();
+            ver.MdiParent = this;
+            ver.Show();
         }
     }
 }
